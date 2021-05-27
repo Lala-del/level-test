@@ -19,3 +19,36 @@ const body = document.querySelector("body");
     window.onscroll = ()=>{
       this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
     }
+
+
+/// task 3
+
+const a = "Welcome to Python";
+
+console.log(
+  a.split('').map(function(repeat) {
+    return repeat + repeat;
+  }).join('')
+)
+
+
+//task 4
+
+
+
+    function smallest_alphabet(b, n)
+    {
+           
+        let min = 'z';
+       
+        for (let i = 0; i < n - 1; i++)
+            if (b[i].charCodeAt() < min.charCodeAt())
+                min = b[i];
+        return min;
+    }
+     
+  let b = "abrakadabra"
+  let size = b.length;
+
+    console.log(smallest_alphabet(b, size));
+     
